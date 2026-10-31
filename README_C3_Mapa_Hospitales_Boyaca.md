@@ -1,34 +1,59 @@
-# C3 – Mapa de Hospitales de Boyacá
+﻿# C3 - Mapa de Hospitales de Boyacá
 
-## Descripción
-Aplicación cartográfica web desarrollada con Leaflet 1.9.4 y JavaScript para visualizar establecimientos hospitalarios del departamento de Boyacá mediante un servicio geográfico de ArcGIS.
+## 1. Descripción del proyecto
 
-## Funcionalidades implementadas
-- Visualización de entidades puntuales sobre el mapa base Esri World Street Map.
-- Consulta de entidades mediante ArcGIS FeatureServer.
-- Ventanas emergentes con los atributos `Nombre` y `NOM_MPIO`.
-- Buscador textual por coincidencias en nombre del hospital o municipio.
-- Ajuste de la extensión del mapa a los resultados de búsqueda.
-- Control con el total de entidades cargadas.
-- Leyenda cartográfica y ficha de información.
+Aplicación cartográfica web desarrollada con HTML, JavaScript y Leaflet 1.9.4 para visualizar y consultar establecimientos hospitalarios del departamento de Boyacá, Colombia.
 
-## Fuentes y tecnologías
-- Servicio de datos: `https://services6.arcgis.com/Ex2fmFOuTOHRZtML/ArcGIS/rest/services/Hospitales_Boyac%C3%A1/FeatureServer/0`
-- Consulta GeoJSON: `https://services6.arcgis.com/Ex2fmFOuTOHRZtML/ArcGIS/rest/services/Hospitales_Boyac%C3%A1/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson`
-- Leaflet 1.9.4: biblioteca de mapas web.
-- Esri World Street Map: mapa base.
+## 2. Datos geográficos
 
-## Ejecución local
-1. Abrir `index.html` en un navegador con conexión a Internet.
-2. Permitir la carga de los recursos externos de Leaflet, el mapa base y el servicio ArcGIS.
-3. Usar el buscador y seleccionar los marcadores para consultar sus atributos.
+- Hospitales de Boyacá: 464 entidades en formato GeoJSON.
+- Veredas de Boyacá: 1.713 entidades en formato GeoJSON.
 
-## Validaciones realizadas
-- Se observaron 464 entidades cargadas en la aplicación.
-- Se comprobó la visualización de los marcadores y las ventanas emergentes.
-- Se verificó la presencia del buscador, la leyenda y la ficha informativa.
-- La búsqueda es textual: compara lo escrito con los campos `Nombre` y `NOM_MPIO`. Por ello, los resultados deben interpretarse como coincidencias de texto, no como una consulta administrativa exacta del municipio.
+## 3. Funcionalidades
 
-## Publicación
-**URL pública:** pendiente de publicación y verificación.
+- Visualización de hospitales mediante marcadores.
+- Mapa base Esri World Street Map.
+- Consulta de atributos mediante ventanas emergentes.
+- Buscador por nombre del hospital y municipio.
+- Ajuste de extensión a los resultados.
+- Contador de entidades.
+- Leyenda cartográfica.
+- Ficha de información.
 
+## 4. Tecnologías utilizadas
+
+- HTML5 y JavaScript.
+- Leaflet 1.9.4.
+- ArcGIS FeatureServer.
+- Esri World Street Map.
+- GeoJSON.
+- Git y GitHub.
+- GitHub Pages.
+
+## 5. Validaciones
+
+- Validación de la estructura GeoJSON.
+- 464 hospitales identificados.
+- 1.713 veredas identificadas.
+- Verificación del buscador y ventanas emergentes.
+- Verificación de leyenda y ficha informativa.
+- Publicación web comprobada.
+
+## 6. Publicación web
+
+Plataforma: GitHub Pages.
+
+URL pública:
+https://raylopezc.github.io/mapa-hospitales-boyaca/
+
+Repositorio:
+https://github.com/Raylopezc/mapa-hospitales-boyaca
+
+## 7. Organización del proyecto
+
+- 01_Proyecto_Leaflet: aplicación cartográfica.
+- 02_Capa_Hospitales: datos fuente de hospitales.
+- 03_Capa_Veredas: datos fuente de veredas.
+- 04_Publicacion_Web: archivos de publicación.
+- 05_Evidencias: soportes del proyecto.
+- 06_Entregables: informe técnico y documentación.
